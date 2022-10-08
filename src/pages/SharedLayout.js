@@ -1,12 +1,13 @@
 import { Link, Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
-
-const Home = () => {
+const SharedLayout = () => {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <section className="section">
+        <Outlet />
+      </section>
     </>
   );
 };
-export default Home;
+export default SharedLayout;
